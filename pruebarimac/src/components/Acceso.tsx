@@ -2,13 +2,24 @@
 
 import React from 'react';
 import '../styles/acceso/Acesso.scss';
+import { useNavigate } from 'react-router-dom';;
+
 
 
 const Acceso: React.FC = () => {
+
+  const navigate = useNavigate(); 
+
   const handleCotizarClick = () => {
-    // Lógica para manejar el clic en el botón "Cotiza aquí"
-    // Por ejemplo, podrías llamar a una función para manejar la solicitud de cotización
-    // o navegar a una nueva pantalla utilizando enrutamiento.
+
+     const documento = (document.querySelector('.documento') as HTMLInputElement).value;
+     const celular = (document.querySelector('.celular') as HTMLInputElement).value;
+ 
+     if (documento.length === 8 && celular.length === 9 && /^\d+$/.test(documento) && /^\d+$/.test(celular)) {
+       navigate('/main');
+     } else {
+       alert('Por favor, ingresa un número de documento válido (8 dígitos) y un número de celular válido (9 dígitos).');
+     }
   };
 
   return (
@@ -34,7 +45,7 @@ const Acceso: React.FC = () => {
             <option value="RUC">RUC</option>
           </select>
           {/* Campo de texto para el número de documento */}
-          <input  type="text" placeholder="Número de documento" pattern="\d*" />
+          <input className="documento"  type="text" placeholder="Número de documento" pattern="\d*" />
         </div>
         {/* Otros campos en una columna */}
         <div className="campos">

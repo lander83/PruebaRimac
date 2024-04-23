@@ -1,0 +1,31 @@
+// Volver.scss
+
+.volver {
+  .volver-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+  }
+
+  .volver-link:hover {
+    color: #007bff;
+  }
+
+  .volver-icon {
+    margin-right: 5px;
+  }
+
+  .circle-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .circle-icon:hover {
+    background-color: #fff;
+    color: #007bff;
+  }
+}
