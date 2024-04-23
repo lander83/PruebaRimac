@@ -5,7 +5,7 @@ import '../styles/planes/Planes.scss';
 const Planes: React.FC = () => {
   return (
     <div>
-      {/* Header del componente Planes */}
+ 
       <nav>
         <ul>
           <li>
@@ -25,9 +25,8 @@ const Planes: React.FC = () => {
         </ul>
       </nav>
 
-      {/* Contenido del componente Planes */}
       <div>
-        {/* Aquí irá el contenido específico del componente Planes */}
+    
       </div>
     </div>
   );
