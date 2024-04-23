@@ -15,7 +15,7 @@ const Acceso: React.FC = () => {
     <div className="acceso">
       {/* Sección izquierda con la imagen */}
       <div className="izquierda" style={{ margin: '10%' }}>
-      <img src='1000004308.png' alt="Imagen Derecha" style={{ width: '130%' }} />
+      <img src='1000004308.png' alt="Imagen Derecha" style={{ width: '150%' }} />
        
       </div>
       {/* Sección derecha con la imagen y los campos de entrada */}
@@ -23,6 +23,7 @@ const Acceso: React.FC = () => {
         {/* Imagen derecha */}
         <div className="imagen-derecha">
         <img src='creadoparati.png' alt="Imagen Izquierda" style={{ width: '100%' }} />
+        <p>Tú eliges cuánto pagar. Ingresa tus datos, cotiza y recibe nuestra asesoría. 100% online.</p>
         </div>
        {/* Campos de entrada */}
        <div className="campos2">
