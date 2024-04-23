@@ -1,0 +1,61 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 5%;
+    background-color: white;
+    padding: 0 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  
+  
+  .logo-container {
+    flex: 1;
+  }
+  
+  .logo {
+    height: 100%;
+    max-height: 100%;
+  }
+  
+  .contact-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info {
+    margin-right: 50px;
+  }
+  
+  .phone-icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.0rem;
+    margin-right: 50px;
+
+  }
+  
+
+  /* Estilo para el contenedor del icono */
+.icon-telefono {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  color:  #333;  
+  border-radius: 30%; 
+  text-align: center;
+  line-height: 30px; 
+  margin-right: 5px;
+
+}
+
+
+.icon-telefono::before {
+  content: "\1F4DE"; 
+  font-family: Arial, sans-serif; 
+  font-size: 20px; 
+  color:  #333;  
+
+}

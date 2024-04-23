@@ -1,0 +1,99 @@
+/* Estilos para el componente Acceso */
+
+.acceso {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .izquierda, .derecha {
+    width: 45%;
+    height: 100%;
+  }
+  
+  .imagen-derecha {
+    margin-bottom: 20px;
+  }
+  
+  .campos2{
+    display: flex;
+    margin-bottom: 10px;
+    height: 50px;
+  }
+  .campo2 {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 50px;
+  }
+
+  .campos2 input[type="text"]{
+
+    width: 150px;
+
+  }
+  .campos2 select, .campos2 input[type="text"], .campos2 label {
+    margin-bottom: 10px;   
+  }
+  .campos2 select {
+    width: 180px;
+  }
+
+  .campos2 input[type="text"], .campos2 select {
+
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 50px;
+  }
+
+
+
+
+
+  .campos {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+  }
+  
+  .campos select, .celular, .campos label {
+    margin-bottom: 10px;
+    height: 50px;
+  }
+  .campos select {
+    height: 50px;
+    width: 80px;
+  }
+  
+   .campos .celular, .campos select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 50px;
+  }
+  
+  .campos button {
+    padding: 10px 20px;
+    border-radius: 80%;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .campos a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  /* Estilos para los checkbox */
+  .campos label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .campos input[type="checkbox"] {
+    margin-right: 10px;
+    background-color: #333;
+  }
+  
