@@ -9,7 +9,7 @@ const Planes: React.FC = () => {
       <nav>
         <ul>
           <li>
-            <Link to="/planes/parati">
+            <Link to="/Main">
               <div>
                 <span>1</span> Planes y Cobertura
               </div>
