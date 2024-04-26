@@ -8,6 +8,7 @@ import Planes from './components/Planes';
 import Header from './components/Header';
 import Volver from './components/Volver';
 import Main from './components/Main';
+import Resumen from './components/Resumen';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Route path="/" element={<Acceso />} /> 
         {/*<Route path="/planes" element={<Planes />} />*/}
         <Route path="/main" element={<Main />} />
+        <Route path='/resumen' element={<Resumen/>} />
       </Routes>
     </div>
   </Router>

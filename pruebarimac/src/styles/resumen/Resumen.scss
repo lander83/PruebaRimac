@@ -1,0 +1,17 @@
+.user-plans-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  
+    .form-column {
+      display: flex;
+      flex-direction: column;
+  
+      .form-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  

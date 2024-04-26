@@ -2,17 +2,23 @@ import React, { useState } from 'react';
 import Volver from './Volver';
 import Planes from './Planes';
 import ParaMi from './ParaMi';
+import ParaAlguienMas from './ParaAlguienMas';
 import '../styles/main/Main.scss';
 
 const Main: React.FC = () => {
 
-    const [mostrarParami, setMostrarParami] = useState(false); // Control de estado para mostrar Parami.tsx
-
+    const [mostrarParami, setMostrarParami] = useState(false); 
+    const [mostrarParaAlguienMas, setMostrarParaAlguienMas] = useState(false); 
     // Manejador de eventos para el cambio del checkbox "Para mí"
     const handleCheckboxChange = () => {
       // Cambiar el estado para mostrar u ocultar Parami.tsx
       setMostrarParami(!mostrarParami);
     };
+
+    const handleCheckboxChange_Alguien = () => {
+        // Cambiar el estado para mostrar u ocultar Parami.tsx
+        setMostrarParaAlguienMas(!mostrarParaAlguienMas);
+      };
     
   return (
     <div>
@@ -29,7 +35,7 @@ const Main: React.FC = () => {
             </span>
           </label>
           <label className="checkbox-label">
-            <input type="checkbox" id="alguienmas" name="alguienmas"  />
+            <input type="checkbox" id="alguienmas" name="alguienmas" onChange={handleCheckboxChange_Alguien} />
             <span className="checkbox-custom">
               <img src="Alguienmas.png" alt="Alguien Más" />
             </span>
@@ -38,6 +44,7 @@ const Main: React.FC = () => {
    
       </div>
       {mostrarParami && <ParaMi/>}
+      {mostrarParaAlguienMas && <ParaAlguienMas/>}
     </div>
   );
 };

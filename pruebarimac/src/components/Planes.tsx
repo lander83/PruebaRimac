@@ -16,7 +16,7 @@ const Planes: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link to="/planes/paraalguien">
+            <Link to="/Resumen">
               <div>
                 <span>2</span> Resumen
               </div>
